@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Professor Sormani</title>
+    <!-- meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  
+  <!-- style section -->
+    <style>
+            /* link formatting */
+            /* .card{
+                border-style: none;
+            } */
+            
+            a{
+                color: #0f0247;
+                align-items: center;
+                font-size: 18px;
+                text-decoration: none;
+            }
+       
+            #logo{
+                padding: 10px;
+                background: rgba(90, 189, 228, 0.1);
+                border-radius: 20px;
+                max-width: 45%;
+                position:relative;
+             top: 0px;
+                margin-left: 0;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                font-size: 24px;
+                color: white;
+             /* margin-right: 20px; */
+           }
+             /* top-page nav button */
+            .btn-lg{
+                background-color: #023047;
+                border-color: #D5573B;
+                color: rgb(1, 26, 41);
+                cursor: pointer;
+                font-size: 25px;
+                text-align: center;
+                position:absolute;
+                top: 30px;
+                right: 130px;
+                padding: 15px;
+            }
+
+            .btn-lg:hover {
+                 background-color: #D5573B;
+                 border-color:#023047;
+                 border-width: 2.5px;
+            }
+
+           /* bottom-page nav btn */
+           .btn.btn-success{
+                background-color: #023047;
+                border-color: #D5573B;
+            }
+            /* needs fixing */
+            .btn.btn-success:hover{
+                transform:scaleZ(2.1);
+            }
+
+             /* nav background */
+            .bg-light{background: rgba(124, 167, 202, 0.7)!important;}
+            
+            /* .bg-dark{
+                background: rgba(2, 48, 71, 1)!important;
+               
+            }
+
+            .navbar.bg-dark.a{ color: seashell;} */ 
+
+            /* hero */
+            .jumbotron{
+                background:url(../project2/assets/img/sormanipic.png);
+                margin-bottom: 0px;
+                max-height: 380px;
+            }
+
+            /* hero-bottom collapsible nav */
+            .nav.nav-pills.justify-content-center.row{
+                background-color:rgba(253, 94, 36, .7);
+                width: 1109px;
+                margin-left: 1px;
+                border-bottom-left-radius: 5px;
+                border-bottom-right-radius: 5px;
+            }
+           
+            /* logo and button container */
+            .miniContainer{
+                margin-bottom: 30px;
+                height: 200px;
+            }
+
+            p{
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+            }
+
+            /* hero btn formatting */
+            nav li li{
+                font-size: 13px;
+                /* text-decoration: none; */
+                display: none;
+            }
+
+            nav li:hover li{
+                display: block;
+                text-align: center;
+            }
+
+            .card.bg-light{
+                border-color: violet;
+            }
+
+            #profile.card{
+                border-color: violet;
+            }
+
+            /*footer*/
+            footer{
+                text-align: center;
+                background-color: black;
+                color: #f5f5f5;
+                padding: 20px;
+                border-top: 2px solid #D5573B;
+                max-height: 31%;
+                width: 100%;
+            }
+                
+            footer a{
+                color: whitesmoke;
+                font-size: 20px;
+                font-family: 'Trebuchet MS','Lucida Sans', Arial, sans-serif;
+            }
+
+            footer a:hover{
+                color: #D5573B;
+                font-weight: bold;
+                text-decoration: none;
+            }
+
+        
+
+    </style>
+</head>
+<body>
+    <!-- hero -->
+    <div class="container">
+        <div class="jumbotron">
+            <div id="logo"> 
+                <h2> Professor Sormani</h2><p> Mathematician</p>
+            </div> 
+            <div class ="miniContainer">
+               <!-- page buttons -->
+                    <span><button class="btn-lg fa fa-bars" id="button">
+                        <!-- not sure if these should be placed in here -->
+                        <a href="index.html" class="active">Home</a>
+                        <a href="research.html">Research</a>
+                    </button></span>
+                    
+                    <!-- <nav>
+                        <ul>
+                            <li> <span><button class="btn-lg fa fa-bars"></button></i>
+                            <ul><li><a href="/index.html" class="active">Home</a></li>
+                                <li><a href="/research.html">Research</a></li>
+                            </ul></button> </span>
+                            </li>
+                        </ul>
+                    </nav> -->
+            </div> 
+        </div>    
+
+        <!-- Nav pills -->
+        <ul class="nav nav-pills justify-content-center row">
+            <li class="nav-item col-md">
+                <a class="nav-link active" data-toggle="pill" href="#home">Home</a>
+            </li>
+            <li class="nav-item col-md">
+                <a class="nav-link" data-toggle="pill" href="#menu1">Invited Talks, Conferences, & Seminars</a>
+            </li>
+            <li class="nav-item col-md">
+                <a class="nav-link" data-toggle="pill" href="#menu2 ">2015 AMS Society Fellow</a>
+            </li>
+            <li class="nav-item col-md">
+                <a class="nav-link" data-toggle="pill" href="#menu3">Citations</a>
+            </li>
+            <li class="nav-item col-md">
+                <a class="nav-link" data-toggle="pill" href="#menu4">Intrinsic Flat Convergence Website</a>
+            </li>
+            <li class="nav-item col-md">
+                <a class="nav-link" data-toggle="pill" href="#menu5">Service & Outreach</a>
+            </li>
+        </ul>
+  
+        <!-- Tab panes -->
+        <div class="tab-content">
+        <div class="tab-pane container active" id="home">
+            <div class="tab1"><img src="assets/img/sormaniWork4.png"></div>
+            <p>The image above depicts sequences of asymptotically flat Riemannian 3-manifolds with positive scalar curvature whose ADM masses converge to 0 which were proven to converge in the intrinsic flat sense to Euclidean space in joint work with D. Lee appearing in Journal fur die Riene und Angewandte Mathematik (Crelle's Journal), Vol 686 (January 2014). </p><hr>
+        </div>
+        <div class="tab-pane container fade" id="menu1">
+            <div class="card">
+                <div class="card-body">
+                    <h4>Invited Talks <a href="https://sites.google.com/site/professorsormani/invited-talks"></a></h4>
+                    <h4>Conferences <a href="https://sites.google.com/site/professorsormani/home/conferences"></a></h4>
+                    <h4>Seminars <a href="https://sites.google.com/site/professorsormani/home/seminars"></a></h4></div>
+              </div>
+        </div>
+
+        <div class="tab-pane container fade" id="menu2">
+            <div class="card">
+                <div class="card-body">
+                    <h4>2015 AMS Society Fellow <a href="http://www.ams.org/cgi-bin/fellows/fellows_by_inst.cgi"></a></h4>
+               </div>
+          </div>
+        </div>
+        <div class="tab-pane container fade" id="menu3">
+            <div class="card">
+                <div class="card-body">
+                    <h4>Citations <a href="https://scholar.google.com/citations?user=RVAuQuIAAAAJ&hl=en"></a></h4>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane container fade" id="menu4">
+            <div class="card">
+                <div class="card-body">
+                    <h4>Intrinsic Flat Convergence Website <a href="https://sites.google.com/site/intrinsicflatconvergence/"></a></h4>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane container fade" id="menu5">
+            <div class="card">
+                <div class="card-body">
+                    <h4>Service <a href="https://sites.google.com/site/professorsormani/home/lehman-college-activities"></a></h4>
+                    <h4>Outreach <a href="https://sites.google.com/site/professorsormani/home/outreach"></a></h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!--campus cards  -->
+    <hr>
+    <div class="container" style="display:flex; height: 40%;">
+        <div class="card" id="profile" style="margin-right: 20px; max-width:50%">
+            <div class="card-body" >
+                <p>
+                    I began working as an Assistant Professor at Lehman College in Spring 2000.   Before that, I completed postdocs at Johns Hopkins and Harvard after completing the doctoral program at the Courant Institute at NYU in 1996.  I am also a doctoral faculty member at the CUNY Graduate Center and a visitor at Stony Brook, where I work with doctoral students and postdocs conducting mathematics research.   In Fall of 2013 I was a visiting research professor at MSRI as part of the program on Mathematical General Relativity.  In Fall 2018 to Spring 2019 I was on leave to serve as a Member of the Institute for Advanced Study (IAS) at Princeton for the program on Variational Methods in Geometry lead by Prof Fernando Coda Marques. Additionally, I was also a visitor at Simons Center for Geometry and Physics (SCGP). Here is a Report on my 2018-2019 Fellowship Leave (pdf). Finally, in 2013 I was nominated for (link)American Mathematical Society Fellow by Shing-Tung Yau and by Bill Minicozzi. See link for 2013 Research Description.
+                </p>
+            </div>
+        </div>
+        <div class="card-deck">
+            <div class="card bg-light">
+                <img class="card-img-top" src="assets/img/sormaniCampus1.png" alt="Card image">
+                <div class="card-body text-center">
+                    <h4><a href="https://www.gc.cuny.edu/Page-Elements/Academics-Research-Centers-Initiatives/Doctoral-Programs/Mathematics" class="card-link">CUNY Graduate Center Department of Mathematics</a></h4>
+                    <p>365 5th Ave, NY NY 10016 CUNY GC Office: 4302 Th</p><br>
+                    <h5><p>Visitor at Stony Brook</p></h5>
+                    <a href="#" class="card-link">sormanic@gmail.com</a>
+                </div>
+            </div>
+            <div class="card bg-light">
+                <img class="card-img-top" src="assets/img/sormaniCampus2.png" alt="Card image">
+                <div class="card-body text-center">
+                    <h4><a href="https://www.lehman.edu/mathematics/index.php" class="card-link">Lehman College - CUNY Department of Mathematics</a></h4>
+                    <p>250 Bedford Park Boulevard West Bronx, New York 10468 Lehman Office: Gillet 200A </p><br>
+                      <h6><p>Working from Home due to Covid</p></h6>
+                    <a href="#" class="card-link">sormanic@gmail.com</a>
+                </div>
+            </div>
+        </div>
+    </div>
+<br>
+
+    <!-- cta div -->
+
+
+<br>
+<!-- bottom links nav -->
+<div class="container-fluid bottom">
+  <nav class="navbar navbar-expand-sm bg-light row">
+    <ul class="navbar-nav">
+      <li class="nav-item col-sm">
+        <a class="nav-link" href="#">Link 1</a>
+      </li>
+      <li class="nav-item col-sm">
+        <a class="nav-link" href="#">Link 2</a>
+      </li>
+      <li class="nav-item col-sm">
+        <a class="nav-link" href="#">Link 3</a>
+      </li>
+      <li class="nav-item col-sm">
+        <a class="nav-link" href="#">Link 4</a>
+      </li>
+      <li class="nav-item col-sm">
+        <a class="nav-link" href="#">Link 5</a>
+      </li>
+    </ul><br>
+    <!-- search bar -->
+    <ul class="navbar-nav justify-content-center">
+        <li class="nav-item col-sm">
+            <form class="form-inline" action="/action_page.php">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                <button class="btn btn-success" type="submit" style="background: #023047; border-color: #D5573B;">Search</button>
+              </form>
+        </li>
+    </ul>
+   </nav>
+  <!-- bottom page nav -->
+    <!-- footer -->
+    <div class="footer">
+        <footer>
+            <a href="index.html"> Home  </a>  
+             &VerticalSeparator;
+            <a href="research.html"> Research</a>
+        </footer>
+    </div>
+
+
+  <!-- <div class="navbar" style="text-align: center;">
+    <a href="/index.html" class="active">Home</a>
+    <a href="/research.html">Research</a>
+  </div>
+</div> -->
+
+<script>
+
+    let page1 = <a href="index.html" class="active">Home</a>
+    let page2 = <a href="research.html">Research</a>
+    
+
+    $('#button').click(function(){
+        let currentPage = $(this).attr('src');
+        if(currentPage == page1){
+            currentPage = page2
+            $('#button').attr(currentPage);
+        }
+
+        if(currentPage == page2){
+            currentPage = page1
+            $('#button').attr(currentPage);
+        }
+    });
+</script>
+
+<!-- scripts -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+
+
+
+           
+          
+
+    
+    
+    
+    
+    
+    
+    
+        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+
+
+
+
+
+
+
