@@ -32,7 +32,20 @@
              /* margin-right: 20px; */
            }
              /* top-page nav button */
-            .btn-lg{
+             #homebtn{
+                background-color: #023047;
+                border-color: #D5573B;
+                color: rgb(1, 26, 41);
+                cursor: pointer;
+                font-size: 25px;
+                text-align: center;
+                position:absolute;
+                top: 30px;
+                right: 190px;
+                padding: 15px;
+            }
+
+            #researchbtn{
                 background-color: #023047;
                 border-color: #D5573B;
                 color: rgb(1, 26, 41);
@@ -45,7 +58,13 @@
                 padding: 15px;
             }
 
-            .btn-lg:hover {
+            #homebtn:hover {
+                 background-color: #D5573B;
+                 border-color:#023047;
+                 border-width: 2.5px;
+            }
+
+            #researchbtn:hover {
                  background-color: #D5573B;
                  border-color:#023047;
                  border-width: 2.5px;
@@ -120,19 +139,19 @@
             <div id="logo"> 
                 <h2> Professor Sormani</h2><p> Mathematician</p>
             </div> 
-            <div class ="miniContainer">
-               <!-- page buttons -->
-                    <span><button class="btn-lg fa fa-bars" id="button">
-                      <!-- not sure if these should be placed in here -->
-                        <a href="/index.html" class="active">Home</a>
-                        <a href="/research.html">Research</a>
-                    </button></span>
-            </div>
-      </div>
-                    
-      
+            <div class = "miniContainer">
 
-
+              <!-- page buttons -->
+                <nav>
+                      <a href="index.html">
+                          <button class="btn btn-info"  role="button" id="homebtn"><i class="fa fa-home"></i>
+                          </button></a>
+                      <a href="research.html">
+                          <button class="btn btn-info"  role="button" id="researchbtn"><i class="fa fa-folder"></i>
+                          </button></a>
+                </nav>
+          </div> 
+       </div> 
 <br>
 <!-- bottom links nav -->
 <div class="container-fluid bottom">
