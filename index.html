@@ -299,39 +299,34 @@
 
     <!-- cta div -->
     <div class="container">
-        <div class="d-inline-flex row">
-            <div class="col-md-3" #id="Teaching" style="width: 1140px;">
+        <div class="row">
+            <div class="col-md-3" id="Teaching" style="width: 1140px;">
                 <img src="assets/img/teachingIcon.png">
-            </div>
-            <div class="col-md-6" #id="showLink">
-                <h5 class="display-6"> Teaching </h5>
-                <p>See Current and Past courses </p>
+            </div> 
+            
+            <div class="col-md-6" id="showLink" style="display: d-inline-flex;"> 
+                <h5 class="display-6"> Content </h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></div>
+                <p><a href="#" class="btn btn-secondary">See more</a></p> 
+            
+        </div>
+        <div class="row">
+            <div class="col-md-3" id="ShowPubs">
+                <img src="assets/img/publicationsIcon2.png">
             </div>        
         </div>
-        <div class="d-inline-flex row">
-            <div class="col-md-3" #id="ShowPubs">
-                <img src="assets/img/publicationsIcon2.png">
-            </div>
-            <div class="col-md-6" #id="showLink">
-                <h5 class="display-6"> Publications, Preprints, and Talks </h5>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></div>        
-        </div>
-        <div class="d-inline-flex row">
-            <div class="col-md-3" #id="CV">
+        <div class="row">
+            <div class="col-md-3" id="CV">
                 <img src="assets/img/cvIcon.png">
-            </div>
-            <div class="col-md-6" #id="showLink"> 
-                <h5 class="display-6"> CV </h5>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></div>       
+            </div>      
         </div>
-        <div class="d-inline-flex row">
-            <div class="col-md-3" #id="DocStu">
+        <div class="row">
+            <div class="col-md-3" id="DocStu">
                 <img src="assets/img/docStuIcon.png">
-            </div>
-            <div class="col-md-6" #id="showLink"> 
-                <h5 class="display-6"> Doctoral Students and Post Docs </h5>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></div>       
+            </div>     
         </div>
+
+         
     </div>
 <br>
 <!-- bottom links nav -->
@@ -383,8 +378,8 @@
     $('#ShowPubs').click(function(){
         $('#showLink h5').html('Publications, preprints & invited Talks')
         $('#showLink a' ).attr('href' , 'https://sites.google.com/site/professorsormani/papers');
-        $('#showLink a' ).attr('href' , 'https://sites.google.com/site/professorsormani/preprints');
-        $('#showLink a' ).attr('href' , 'https://sites.google.com/site/professorsormani/invited-talks');
+        // $('#showLink a' ).attr('href' , 'https://sites.google.com/site/professorsormani/preprints');
+        // $('#showLink a' ).attr('href' , 'https://sites.google.com/site/professorsormani/invited-talks');
     });
 
     $('#CV').click(function(){
@@ -395,7 +390,7 @@
     $('#DocStu').click(function(){
         $('#showLink h5').html('Doctoral Students & Post Docs')
         $('#showLink a' ).attr('href' , 'https://sites.google.com/site/professorsormani/doctoral-students');
-        $('#showLink a' ).attr('href' , 'https://sites.google.com/site/professorsormani/postdocs');
+        // $('#showLink a' ).attr('href' , 'https://sites.google.com/site/professorsormani/postdocs');
     });
 </script>
 
